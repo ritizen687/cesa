@@ -1,0 +1,57 @@
+export 
+const creaturesData = [
+  {
+    id: 1,
+    name: "Hippogriff",
+    image: "/Hippogriff.jpeg",
+    classification: "XXX",
+    description: "A magical creature that has the front legs, wings, and head of a giant eagle and the body, hind legs, and tail of a horse.",
+    habitat: "Forests and Mountains",
+    color: "from-slate-400 to-slate-600",
+  },
+  {
+    id: 2,
+    name: "Niffler",
+    image: "/Niffler.webp",
+    classification: "XXX",
+    description: "Long-snouted, burrowing creatures native to Britain with a predilection for anything shiny.",
+    habitat: "Mines and Underground",
+    color: "from-amber-700 to-black",
+  },
+  {
+    id: 3,
+    name: "Phoenix",
+    image: "/Phoenix.jpeg",
+    classification: "XXXXX",
+    description: "A magnificent, red bird the size of a swan, with a long golden tail, beak, and talons. They burst into flames when it is time for them to die and are reborn from the ashes.",
+    habitat: "Mountain Peaks",
+    color: "from-red-500 to-orange-600",
+  },
+  {
+    id: 4,
+    name: "Thestral",
+    image: "/Thestral.jpeg",
+    classification: "XXXX",
+    description: "A breed of winged horse with a skeletal body, face with reptilian features, and wide, leathery wings that resemble a bat's.",
+    habitat: "Dark Forests",
+    color: "from-gray-800 to-gray-950",
+  },
+  {
+    id: 5,
+    name: "Dragon (Hungarian Horntail)",
+    image: "/Hungarian Horntail.jpeg",
+    classification: "XXXXX",
+    description: "Considered to be the most dangerous dragon breed, the Hungarian Horntail has black scales and is lizard-like in appearance.",
+    habitat: "Mountains",
+    color: "from-stone-700 to-red-900",
+  },
+  {
+    id: 6,
+    name: "Basalisk",
+    image: "/Basalisk.jpeg",
+    classification: "XXXXX",
+    description: "A giant serpent, also known as the King of Serpents. It can grow to a gigantic size and live for many hundreds of years.",
+    habitat: "Dark Chambers",
+    color: "from-emerald-800 to-green-950",
+  }
+];

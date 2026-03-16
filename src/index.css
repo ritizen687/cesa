@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+@layer base {
+  body {
+    @apply bg-[#020b0d] text-amber-50;
+    font-family: 'EB Garamond', serif;
+    background-image: 
+      radial-gradient(ellipse at 20% 50%, rgba(120, 70, 0, 0.05) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(0, 60, 80, 0.08) 0%, transparent 60%);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Gold gradient text */
+.gold-text {
+  background: linear-gradient(135deg, #f59e0b 0%, #fcd34d 40%, #d97706 70%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-card-hover {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.5s ease;
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 30px rgba(180, 120, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+}
+
+/* Glow divider */
+.glow-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.4), transparent);
+}
+
+/* House cards */
+.house-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.house-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.house-card-gryffindor {
+  background: linear-gradient(135deg, #740001 0%, #AE0001 50%, #7c0002 100%);
+  box-shadow: 0 8px 32px rgba(174, 0, 1, 0.3);
+}
+.house-card-gryffindor:hover {
+  box-shadow: 0 20px 60px rgba(174, 0, 1, 0.5);
+}
+
+.house-card-slytherin {
+  background: linear-gradient(135deg, #0d2818 0%, #1A472A 50%, #2A623D 100%);
+  box-shadow: 0 8px 32px rgba(26, 71, 42, 0.4);
+}
+.house-card-slytherin:hover {
+  box-shadow: 0 20px 60px rgba(26, 71, 42, 0.6);
+}
+
+.house-card-hufflepuff {
+  background: linear-gradient(135deg, #d4900a 0%, #ECB939 50%, #F0C75E 100%);
+  box-shadow: 0 8px 32px rgba(236, 185, 57, 0.3);
+}
+.house-card-hufflepuff:hover {
+  box-shadow: 0 20px 60px rgba(236, 185, 57, 0.5);
+}
+
+.house-card-ravenclaw {
+  background: linear-gradient(135deg, #060d22 0%, #0E1A40 50%, #222F5B 100%);
+  box-shadow: 0 8px 32px rgba(34, 47, 91, 0.5);
+}
+.house-card-ravenclaw:hover {
+  box-shadow: 0 20px 60px rgba(34, 47, 91, 0.7);
+}
+
+/* Filter button */
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: 'Cinzel', serif;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(251, 191, 36, 0.15);
+  color: rgba(251, 191, 36, 0.6);
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+.filter-btn:hover {
+  border-color: rgba(251, 191, 36, 0.4);
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.05);
+}
+.filter-btn.active {
+  background: linear-gradient(135deg, rgba(180, 100, 0, 0.4), rgba(120, 70, 0, 0.3));
+  border-color: rgba(251, 191, 36, 0.5);
+  color: #fcd34d;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.15);
+}
+
+/* Animate fadeIn */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #020b0d; }
+::-webkit-scrollbar-thumb { background: rgba(180, 120, 0, 0.4); border-radius: 4px; }
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.hover\:pause:hover {
+  animation-play-state: paused;
+}

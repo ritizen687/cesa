@@ -1,0 +1,66 @@
+import { Users, Sparkles, Shield, ArrowRight, Star, BookOpen, Wand2, Beaker, PawPrint } from "lucide-react";
+
+const features = [
+  {
+    icon: Users,
+    title: "Characters",
+    subtitle: "Meet the Wizards",
+    description: "Explore witches, wizards, and magical beings from the beloved series.",
+    path: "/characters",
+    gradient: "from-amber-900/60 to-amber-800/20",
+    glow: "rgba(180,100,0,0.2)",
+    accent: "#fbbf24",
+  },
+  {
+    icon: Sparkles,
+    title: "Spells",
+    subtitle: "Cast Magic",
+    description: "Discover incantations, charms, and powerful hexes of the wizarding world.",
+    path: "/spells",
+    gradient: "from-purple-900/60 to-indigo-900/20",
+    glow: "rgba(120,60,200,0.2)",
+    accent: "#a78bfa",
+  },
+  {
+    icon: Shield,
+    title: "Houses",
+    subtitle: "Find Your House",
+    description: "Uncover the four great houses of Hogwarts and their noble traditions.",
+    path: "/houses",
+    gradient: "from-emerald-900/60 to-teal-900/20",
+    glow: "rgba(0,120,80,0.2)",
+    accent: "#34d399",
+  },
+  {
+    icon: Beaker,
+    title: "Potions",
+    subtitle: "Master Alchemy",
+    description: "Learn the delicate art of potion-making and magical chemistry.",
+    path: "/potions",
+    gradient: "from-emerald-900/60 to-green-900/20",
+    glow: "rgba(16,185,129,0.2)",
+    accent: "#10b981",
+  },
+  {
+    icon: PawPrint,
+    title: "Creatures",
+    subtitle: "Magizoology",
+    description: "Discover the amazing beasts and where to find them in the wizarding world.",
+    path: "/creatures",
+    gradient: "from-amber-900/60 to-orange-900/20",
+    glow: "rgba(180,100,0,0.2)",
+    accent: "#f59e0b",
+  },
+  {
+    icon: Star,
+    title: "Sorting Hat",
+    subtitle: "Your Destiny",
+    description: "Let the Sorting Hat decide which house truly matches your spirit.",
+    path: "/sorting-hat",
+    gradient: "from-amber-900/60 to-red-900/20",
+    glow: "rgba(245,158,11,0.2)",
+    accent: "#f59e0b",
+  },
+];
+
+export default features;
